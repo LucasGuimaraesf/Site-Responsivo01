@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Gidole&display=swap');
+
+/* Abaixo está a configuração padrão do CSS - SELETOR UNIVERSAL
+Margin - Espaçamento externo
+Padding - Espaçamento interno
+Box-sizing - */
+*{ 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/*Abaixo foi importada uma fonte do Google Fonts*/
+body{
+        font-family: "Gidole", sans-serif;
+        font-weight: 400;
+        font-style: normal;    
+}
+
+/*O root é a mãe de todas as páginas do CSS, como html é*/
+
+:root{
+ --marromforte:  #260F01;
+ --marrommedio: #40250D;
+ --marromfraco: #8C5F37;
+ --bege:#BFA380;
+ --rosa:#D9CBBA;
+ --degrade-btn: linear-gradient(#8C5F37,#40250D);
+}
+.background-bege{
+    background:var(--bege);
+}
+
+/*Classes Reutilizaveis*/
+/*Usar esse container e delimitar o tamanho auxilia na responsividade dos diferentes tamanhos de monitores*/
+.container{
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+.btn-gradient{
+    padding: 20px 30px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    background-image: var(--degrade-btn);
+}
+
+/*Classes do site*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.logo img{
+    width: 100px;
+    border-radius:20px;
+}
+.ul{
+    display: flex;
+    align-items: center;
+    
+}
+.ul li{
+    margin: 0 35px;
+    font-size: 15px;
+}
+.ul li a{
+    color: white;
+}
+
+/*Main*/
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    margin-top: 30px;
+}
+.main-text h1{
+    font-size: 50px;
+
+}
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.main-img img{
+        border-radius: 20px;
+}
