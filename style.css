@@ -39,7 +39,7 @@ body{
 /*Usar esse container e delimitar o tamanho auxilia na responsividade dos diferentes tamanhos de monitores*/
 .container{
     max-width: 1440px;
-    padding: 0 5%;
+    padding: 0 3%;
     margin: 0 auto;
 }
 .btn-gradient{
@@ -57,7 +57,7 @@ nav{
     align-items: center;
     padding: 20px 0px;
 }
-.logo img{
+.ul img{
     width: 100px;
     border-radius:20px;
 }
@@ -67,8 +67,10 @@ nav{
     
 }
 .ul li{
-    margin: 0 35px;
+    margin: 0 30px;
     font-size: 15px;
+    display: flex;
+    
 }
 .ul li a{
     color: white;
@@ -93,4 +95,5 @@ main .container{
 }
 .main-img img{
         border-radius: 20px;
+        width: 600px;
 }
